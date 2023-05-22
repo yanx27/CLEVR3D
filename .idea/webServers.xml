@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="49c0d0d4-0c22-446a-99ba-a252623cd4a6" name="AISTATION">
+        <fileTransfer accessType="SFTP" host="10.27.130.16" port="30914" sshConfigId="efd633ad-6150-4132-8bc7-168d02a81a7c" sshConfig="root@10.27.130.16:30914 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

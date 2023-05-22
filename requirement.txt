@@ -1,0 +1,5 @@
+plyfile
+transformers
+imageio
+pytorch_lightning==1.3.8
+easydict
