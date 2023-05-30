@@ -22,6 +22,7 @@ CONF.PATH.R3SCAN_META = os.path.join(CONF.PATH.R3SCAN, "meta_data")
 CONF.PATH.R3SCAN_SCANS = '/data/3rscan/'
 CONF.PATH.R3SCAN10dim_align = '/data/10dimPoints_align/'
 CONF.PATH.R3SCAN10dim = '/data/10dimPoints'
+CONF.PATH.H5 = "/data/3rscan.pkl"
 
 # CLEVER3D
 # CONF.PATH.CLEVER3D = os.path.join(CONF.PATH.R3SCAN, "CLEVER3D")

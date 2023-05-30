@@ -191,12 +191,7 @@ class R3ScanVQAO27R16Dataset(Dataset):
         self.scene_data = {}
         if not self.no_vision and self.preloading:
             print("loading %s point clouds..." % self.split)
-            for scene_id in self.scene_list:
-                self.scene_data[scene_id] = {}
-                self.scene_data[scene_id]["mesh_vertices"] = np.load(
-                    os.path.join(CONF.PATH.R3SCAN, 'R3Scan_noSample_27cls', scene_id) + "_vert.npy")
-                self.scene_data[scene_id]["instance_labels"] = np.load(
-                    os.path.join(CONF.PATH.R3SCAN, 'R3Scan_noSample_27cls', scene_id) + "_ins_label.npy")
+            self.scene_data = pickle.load(open(CONF.PATH.H5, 'rb'))
 
     def __getitem__(self, idx):
         start = time.time()
