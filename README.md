@@ -1,8 +1,8 @@
 # CLEVR3D
 
 **Xu Yan***, **Zhihao Yuan***, Yuhao Du, Yinghong Liao, Yao Guo, Zhen Li, and Shuguang Cui, 
-"*Comprehensive Visual Question Answering on Point Clouds through Compositional Scene Manipulation
-*" [[arxiv]](https://arxiv.org/pdf/2112.11691.pdf).
+"Comprehensive Visual Question Answering on Point Clouds through Compositional Scene Manipulation
+" [[arxiv]](https://arxiv.org/pdf/2112.11691.pdf).
 
  ![image](img/fig1.png)
  
