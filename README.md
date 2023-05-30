@@ -15,7 +15,6 @@ If you find our work useful in your research, please consider citing:
   journal={arXiv preprint arXiv:2112.11691},
   year={2021}
 }
-}
 ```
 
 
@@ -46,7 +45,7 @@ The VQA3D data can be found in `data/CLEVR3D/CLEVR3D-REAL.json`. The data has th
 ]}
 ```
 The scan number is the same as [3RScan](https://github.com/WaldJohannaU/3RScan).
-Please download the preprocessed 3RScan data from [Baidu Netdisk [ifei]](https://pan.baidu.com/s/1q-K79cEeHzUaBJ1ZjkNxvw). And modify the data path in `lib/config.py`.
+Please download the preprocessed 3RScan data from [Baidu Netdisk](https://pan.baidu.com/s/1q-K79cEeHzUaBJ1ZjkNxvw) (**ifei**). And modify the data path in `lib/config.py`.
 
 ## Training
 ```shell
@@ -59,4 +58,3 @@ python main.py --log_dir {LOGNAME} --preloading --gpu 0
 ```shell
 python main.py --test --checkpoint <dir for the pytorch checkpoint> --gpu 0
 ```
-The paper is still under-review and the codes will be polished in the future...
