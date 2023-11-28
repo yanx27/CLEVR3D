@@ -2,14 +2,15 @@
 Default choices for auxiliary classifications tasks, encoders & decoders.
 """
 import torch.nn as nn
-from models.backbone import LSTMEncoder, load_glove_pretrained_embedding, make_pretrained_embedding, MLP
+from models.backbone import MLP
+from models.backbone.lstm_encoder import LSTMEncoder
 from models.backbone import PointNetPP
 from models.backbone import Vocabulary
-
 
 #
 # Object Encoder
 #
+
 
 def single_object_encoder(point_dim: int, out_dim: int) -> PointNetPP:
     """
@@ -20,9 +21,7 @@ def single_object_encoder(point_dim: int, out_dim: int) -> PointNetPP:
     return PointNetPP(sa_n_points=[32, 16, None],
                       sa_n_samples=[32, 32, None],
                       sa_radii=[0.2, 0.4, None],
-                      sa_mlps=[[point_dim, 64, 64, 128],
-                               [128, 128, 128, 256],
-                               [256, 256, 512, out_dim]])
+                      sa_mlps=[[point_dim, 64, 64, 128], [128, 128, 128, 256], [256, 256, 512, out_dim]])
 
 
 #
@@ -59,7 +58,9 @@ def object_decoder_for_clf(object_latent_dim: int, n_classes: int) -> MLP:
 def token_encoder(word_embedding_dim,
                   lstm_n_hidden: int,
                   word_dropout: float,
-                  init_c=None, init_h=None, random_seed=None,
+                  init_c=None,
+                  init_h=None,
+                  random_seed=None,
                   feature_type='max'):
     """
     Language Token Encoder.
@@ -73,15 +74,14 @@ def token_encoder(word_embedding_dim,
     @param feature_type:
     """
 
-    word_projection = nn.Sequential(nn.Linear(word_embedding_dim, word_embedding_dim),
-                                    nn.ReLU(),
-                                    nn.Dropout(word_dropout),
-                                    nn.Linear(word_embedding_dim, word_embedding_dim),
-                                    nn.ReLU())
+    word_projection = nn.Sequential(nn.Linear(word_embedding_dim, word_embedding_dim), nn.ReLU(), nn.Dropout(word_dropout),
+                                    nn.Linear(word_embedding_dim, word_embedding_dim), nn.ReLU())
 
-
-    model = LSTMEncoder(n_input=word_embedding_dim, n_hidden=lstm_n_hidden,
-                        init_c=init_c, init_h=init_h, word_transformation=word_projection,
+    model = LSTMEncoder(n_input=word_embedding_dim,
+                        n_hidden=lstm_n_hidden,
+                        init_c=init_c,
+                        init_h=init_h,
+                        word_transformation=word_projection,
                         feature_type=feature_type)
     return model, word_projection
 

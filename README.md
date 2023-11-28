@@ -4,6 +4,8 @@
 "Comprehensive Visual Question Answering on Point Clouds through Compositional Scene Manipulation
 " [[arxiv]](https://arxiv.org/pdf/2112.11691.pdf).
 
+> Our paper is accepted by TVCG (IEEE Transactions on Visualization and Computer Graphics)
+
  ![image](img/fig1.png)
  
  
@@ -50,11 +52,11 @@ Please download the preprocessed 3RScan data from [Baidu Netdisk](https://pan.ba
 ## Training
 ```shell
 cd <root dir of this repo>
-python main.py --log_dir {LOGNAME} --preloading --gpu 0 
+python main.py --log_dir {LOGNAME} --use_scene_graph --preloading
 ```
 
 
 ## Evaluation
 ```shell
-python main.py --test --checkpoint <dir for the pytorch checkpoint> --gpu 0
+python main.py --test --ckpt_path <dir for the pytorch checkpoint> --use_scene_graph --preloading
 ```

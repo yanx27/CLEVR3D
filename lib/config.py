@@ -7,8 +7,8 @@ CONF = EasyDict()
 # path
 CONF.PATH = EasyDict()
 CONF.PATH.BASE = os.getcwd()
-CONF.PATH.DATA = os.path.join(CONF.PATH.BASE, "data")
-CONF.PATH.R3SCAN = os.path.join(CONF.PATH.DATA, "R3Scan")
+CONF.PATH.DATA = os.path.join("/221019046/", "Data")
+CONF.PATH.R3SCAN = os.path.join(CONF.PATH.BASE, "data/R3Scan")
 CONF.PATH.LIB = os.path.join(CONF.PATH.BASE, "lib")
 CONF.PATH.MODELS = os.path.join(CONF.PATH.BASE, "models")
 CONF.PATH.UTILS = os.path.join(CONF.PATH.BASE, "utils")
@@ -22,13 +22,14 @@ CONF.PATH.R3SCAN_META = os.path.join(CONF.PATH.R3SCAN, "meta_data")
 CONF.PATH.R3SCAN_SCANS = '/data/3rscan/'
 CONF.PATH.R3SCAN10dim_align = '/data/10dimPoints_align/'
 CONF.PATH.R3SCAN10dim = '/data/10dimPoints'
-CONF.PATH.H5 = "/data/3rscan.pkl"
+CONF.PATH.H5 = "/221019046/Data/3RSCAN/processed/3rscan.pkl"
+CONF.PATH.HF = "/221019046/Data/huggingface"
 
-# CLEVER3D
-# CONF.PATH.CLEVER3D = os.path.join(CONF.PATH.R3SCAN, "CLEVER3D")
-CONF.PATH.CLEVER3D = os.path.join(CONF.PATH.DATA, "CLEVR3D")
-CONF.PATH.CLEVER3D_data = os.path.join(CONF.PATH.CLEVER3D, "CLEVR3D-REAL.json")
+# CLEVR3D
+CONF.PATH.CLEVR3D = os.path.join(CONF.PATH.BASE, 'data', "CLEVR3D")
+CONF.PATH.CLEVER3D_data = os.path.join(CONF.PATH.CLEVR3D, "CLEVR3D-REAL.json")
+CONF.PATH.CLEVER3D_answer = os.path.join(CONF.PATH.CLEVR3D, "answer_dict_x1.json")
 
 # R3SCAN
-CONF.PATH.R3SCAN_TRAIN = os.path.join(CONF.PATH.R3SCAN_META, "train_scans.txt")
-CONF.PATH.R3SCAN_VAL = os.path.join(CONF.PATH.R3SCAN_META, "validation_scans.txt")
+CONF.PATH.R3SCAN_TRAIN = os.path.join(CONF.PATH.R3SCAN_META, "train.txt")
+CONF.PATH.R3SCAN_VAL = os.path.join(CONF.PATH.R3SCAN_META, "val.txt")

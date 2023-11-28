@@ -1,1 +1,1 @@
-from utils.metric import ClfAccuracy, ClassAccuracy, SceneGraphEval, SceneGraphEvalSSG, SceneGraphEvalSSG2
+from utils.metric import ClfAccuracy, ClassAccuracy, SceneGraphEval
