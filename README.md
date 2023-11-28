@@ -24,10 +24,8 @@ If you find our work useful in your research, please consider citing:
 
 ### Requirements
 - pytorch >= 1.8 
-- yaml
-- easydict
-- pyquaternion
-- [lightning](https://github.com/Lightning-AI/lightning) (tested with pytorch_lightning==1.3.8 and torchmetrics==0.5)
+- transformers
+- [PyTorch Lightning](https://lightning.ai/docs/pytorch/stable/)
 
 ## Data Preparation
 The VQA3D data can be found in `data/CLEVR3D/CLEVR3D-REAL.json`. The data has the following structure:
@@ -57,6 +55,7 @@ python main.py --log_dir {LOGNAME} --use_scene_graph --preloading
 
 
 ## Evaluation
+You cna download our weights from [OneDrive](https://cuhko365-my.sharepoint.com/:u:/g/personal/221019046_link_cuhk_edu_cn/EUZZSwJPTD9Btep3Z2lYa10BqxXJ4ecJydWa_pX5YQk9DQ?e=SkznPm)
 ```shell
 python main.py --test --ckpt_path <dir for the pytorch checkpoint> --use_scene_graph --preloading
 ```
