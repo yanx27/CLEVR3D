@@ -1,6 +1,6 @@
 # CLEVR3D
 
-**Xu Yan***, **Zhihao Yuan***, Yuhao Du, Yinghong Liao, Yao Guo, Zhen Li, and Shuguang Cui, 
+**Xu Yan***, **Zhihao Yuan***, Yuhao Du, Yinghong Liao, Yao Guo, Shuguang Cui, and Zhen Li 
 "Comprehensive Visual Question Answering on Point Clouds through Compositional Scene Manipulation
 " [[arxiv]](https://arxiv.org/pdf/2112.11691.pdf).
 
@@ -11,11 +11,14 @@
  
 If you find our work useful in your research, please consider citing:
 ```latex
-@article{yan2021clevr3d,
+@article{yan2023comprehensive,
   title={Comprehensive Visual Question Answering on Point Clouds through Compositional Scene Manipulation},
-  author={Yan, Xu and Yuan, Zhihao and Du, Yuhao and Liao, Yinghong and Guo, Yao and Li, Zhen and Cui, Shuguang},
-  journal={arXiv preprint arXiv:2112.11691},
-  year={2021}
+  author={Yan, Xu and Yuan, Zhihao and Du, Yuhao and Liao, Yinghong and Guo, Yao and Cui, Shuguang and Li, Zhen},
+  journal={IEEE Transactions on Visualization \& Computer Graphics},
+  number={01},
+  pages={1--13},
+  year={2023},
+  publisher={IEEE Computer Society}
 }
 ```
 
