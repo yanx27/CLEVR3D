@@ -1,0 +1,2649 @@
+[
+  {
+    "text": [
+      "Do the <Z> <C> <M> <S> <L> and the <Z2> <C2> <M2> <S2> <L2> have the same size?",
+      "Is the size of the <Z> <C> <M> <S> <L> the same as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Do the <Z> <C> <M> <S> <L> and the <Z2> <C2> <M2> <S2> <L2> have the same size?",
+      "Is the <Z> <C> <M> <S> <L> the same size as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Does the <Z> <C> <M> <S> <L> have the same size as the <Z2> <C2> <M2> <S2> <L2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [
+          4,
+          5
+        ],
+        "type": "equal_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<Z>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          1,
+          3
+        ],
+        "type": "OUT_NEQ"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Do the <Z> <C> <M> <S> <L> and the <Z2> <C2> <M2> <S2> <L2> have the same color?",
+      "Is the color of the <Z> <C> <M> <S> <L> the same as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Does the <Z> <C> <M> <S> <L> have the same color as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Is the <Z> <C> <M> <S> <L> the same color as the <Z2> <C2> <M2> <S2> <L2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [
+          4,
+          5
+        ],
+        "type": "equal_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<C>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          1,
+          3
+        ],
+        "type": "OUT_NEQ"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Do the <Z> <C> <M> <S> <L> and the <Z2> <C2> <M2> <S2> <L2> have the same material?",
+      "Are the <Z> <C> <M> <S> <L> and the <Z2> <C2> <M2> <S2> <L2> made of the same material?",
+      "Is the material of the <Z> <C> <M> <S> <L> the same as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Does the <Z> <C> <M> <S> <L> have the same material as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Is the <Z> <C> <M> <S> <L> made of the same material as the <Z2> <C2> <M2> <S2> <L2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          4
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [
+          2,
+          5
+        ],
+        "type": "equal_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          1,
+          4
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<M>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Do the <Z> <C> <M> <S> <L> and the <Z2> <C2> <M2> <S2> <L2> have the same shape?",
+      " Does the <Z> <C> <M> <S> <L> have the same shape as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Is the shape of the <Z> <C> <M> <S> <L> the same as the <Z2> <C2> <M2> <S2> <L2>?",
+      "Is the <Z> <C> <M> <S> <L> the same shape as the <Z2> <C2> <M2> <S2> <L2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          4
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [
+          2,
+          5
+        ],
+        "type": "equal_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          1,
+          4
+        ],
+        "type": "OUT_NEQ"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the size of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same size as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> have the same size?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; does it have the same size as the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is it the same size as the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is its size the same as the <Z3> <C3> <M3> <S3> <L3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [
+          3,
+          6
+        ],
+        "type": "equal_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the size of the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Does the <Z> <C> <M> <S> <L> have the same size as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Do the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2> have the same size?",
+      "There is a <Z> <C> <M> <S> <L>; does it have the same size as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "There is a <Z> <C> <M> <S> <L>; is its size the same as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "There is a <Z> <C> <M> <S> <L>; is it the same size as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [
+          2,
+          6
+        ],
+        "type": "equal_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          1,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<Z>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the size of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same size as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3> have the same size?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; does it have the same size as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is its size the same as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is it the same size as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z4>",
+          "<C4>",
+          "<M4>",
+          "<S4>",
+          "<L4>"
+        ],
+        "inputs": [
+          5
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          6
+        ],
+        "type": "query_size"
+      },
+      {
+        "inputs": [
+          3,
+          7
+        ],
+        "type": "equal_size"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Label",
+        "name": "<L4>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z4>"
+      },
+      {
+        "type": "Color",
+        "name": "<C4>"
+      },
+      {
+        "type": "Material",
+        "name": "<M4>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S4>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          6
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<Z2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<Z4>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the color of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same color as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> have the same color?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; does it have the same color as the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is it the same color as the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is its color the same as the <Z3> <C3> <M3> <S3> <L3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [
+          3,
+          6
+        ],
+        "type": "equal_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the color of the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Does the <Z> <C> <M> <S> <L> have the same color as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Do the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2> have the same color?",
+      "There is a <Z> <C> <M> <S> <L>; does it have the same color as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "There is a <Z> <C> <M> <S> <L>; is its color the same as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "There is a <Z> <C> <M> <S> <L>; is it the same color as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [
+          2,
+          6
+        ],
+        "type": "equal_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          5,
+          1
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<C>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the color of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same color as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3> have the same color?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; does it have the same color as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is its color the same as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is it the same color as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z4>",
+          "<C4>",
+          "<M4>",
+          "<S4>",
+          "<L4>"
+        ],
+        "inputs": [
+          5
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          6
+        ],
+        "type": "query_color"
+      },
+      {
+        "inputs": [
+          3,
+          7
+        ],
+        "type": "equal_color"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Label",
+        "name": "<L4>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z4>"
+      },
+      {
+        "type": "Color",
+        "name": "<C4>"
+      },
+      {
+        "type": "Material",
+        "name": "<M4>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S4>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          6
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<C2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<C4>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the material of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same material as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> have the same material?",
+      "Are the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> made of the same material?",
+      "Is the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> made of the same material as the <Z3> <C3> <M3> <S3> <L3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [
+          3,
+          6
+        ],
+        "type": "equal_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the material of the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Does the <Z> <C> <M> <S> <L> have the same material as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Do the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2> have the same material?",
+      "Is the <Z> <C> <M> <S> <L> made of the same material as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Are the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2> made of the same material?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [
+          2,
+          6
+        ],
+        "type": "equal_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          1,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<M>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the material of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same material as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3> have the same material?",
+      "Is the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> made of the same material as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Are the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3> made of the same material?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z4>",
+          "<C4>",
+          "<M4>",
+          "<S4>",
+          "<L4>"
+        ],
+        "inputs": [
+          5
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          6
+        ],
+        "type": "query_material"
+      },
+      {
+        "inputs": [
+          3,
+          7
+        ],
+        "type": "equal_material"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Label",
+        "name": "<L4>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z4>"
+      },
+      {
+        "type": "Color",
+        "name": "<C4>"
+      },
+      {
+        "type": "Material",
+        "name": "<M4>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S4>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          6
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<M2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<M4>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the shape of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same shape as the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> have the same shape?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; does it have the same shape as the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is it the same shape as the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is its shape the same as the <Z3> <C3> <M3> <S3> <L3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [
+          3,
+          6
+        ],
+        "type": "equal_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the shape of the <Z> <C> <M> <S> <L> the same as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Does the <Z> <C> <M> <S> <L> have the same shape as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "Do the <Z> <C> <M> <S> <L> and the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2> have the same shape?",
+      "There is a <Z> <C> <M> <S> <L>; does it have the same shape as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "There is a <Z> <C> <M> <S> <L>; is its shape the same as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "There is a <Z> <C> <M> <S> <L>; is it the same shape as the <Z3> <C3> <M3> <S3> <L3> [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          3
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          5
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [
+          2,
+          6
+        ],
+        "type": "equal_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          1,
+          5
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<S>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S3>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  },
+  {
+    "text": [
+      "Is the shape of the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> the same as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Does the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> have the same shape as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "Do the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L> and the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3> have the same shape?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; does it have the same shape as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is its shape the same as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z> <C> <M> <S> <L>; is it the same shape as the <Z4> <C4> <M4> <S4> <L4> [that is] <R2> the <Z3> <C3> <M3> <S3> <L3>?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>",
+          "<L>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          4
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z4>",
+          "<C4>",
+          "<M4>",
+          "<S4>",
+          "<L4>"
+        ],
+        "inputs": [
+          5
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          6
+        ],
+        "type": "query_shape"
+      },
+      {
+        "inputs": [
+          3,
+          7
+        ],
+        "type": "equal_shape"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L>"
+      },
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Label",
+        "name": "<L4>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z4>"
+      },
+      {
+        "type": "Color",
+        "name": "<C4>"
+      },
+      {
+        "type": "Material",
+        "name": "<M4>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S4>"
+      }
+    ],
+    "constraints": [
+      {
+        "params": [
+          2,
+          6
+        ],
+        "type": "OUT_NEQ"
+      },
+      {
+        "params": [
+          "<S2>"
+        ],
+        "type": "NULL"
+      },
+      {
+        "params": [
+          "<S4>"
+        ],
+        "type": "NULL"
+      }
+    ]
+  }
+]

@@ -115,3 +115,5 @@ dmypy.json
 
 logs/
 lib/config.py
+
+output/

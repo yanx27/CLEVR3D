@@ -62,3 +62,22 @@ You cna download our weights from [OneDrive](https://cuhko365-my.sharepoint.com/
 ```shell
 python main.py --test --ckpt_path <dir for the pytorch checkpoint> --use_scene_graph --preloading
 ```
+
+## Question Generation
+
+The dataset is semi-automatic generated, where an initiating dataset is generated automatically, and some manual modification is applied.
+
+All the files needed for question generation is in the directory of ```data_generation```.
+
+We will generate questions, functional programs, and answers for the scenes. This step takes as input the single JSON file ``` 3dssg_scenes.json``` containing all ground-truth scene information and outputs a JSON file ``` questions.json``` containing questions, answers, and functional programs for the questions.
+
+You can generate initiating questions like this:
+
+```
+cd question_generation
+python generate_questions.py
+```
+
+By default, ``` generate_questions.py``` will generate questions for all scenes in the input file. However, you can generate questions by using other flags like ```--scene_start_idx```.
+
+You can find more details about question generation [here](data_generation/README.md).

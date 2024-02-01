@@ -1,0 +1,270 @@
+[
+  {
+    "text": [
+      "What is the <Z> <C> <M> <S> thing [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "What is the <Z> <C> <M> <S> object [that is] <R> the <Z2> <C2> <M2> <S2> <L2>?",
+      "There is a <Z> <C> <M> <S> thing [that is] <R> the <Z2> <C2> <M2> <S2> <L2>; what is it?",
+      "There is a <Z> <C> <M> <S> object [that is] <R> the <Z2> <C2> <M2> <S2> <L2>; what is it?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          2
+        ],
+        "type": "query_label"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      }
+    ],
+    "constraints": [
+    ]
+  },
+  {
+    "text": [
+      "What is the <Z> <C> <M> <S> thing [that is] <R2> the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z3> <C3> <M3> <S3> <L3>?",
+      "What is the <Z> <C> <M> <S> object [that is] <R2> the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z3> <C3> <M3> <S3> <L3>?",
+      "There is a <Z> <C> <M> <S> thing [that is] <R2> the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z3> <C3> <M3> <S3> <L3>; what is it?",
+      "There is a <Z> <C> <M> <S> object [that is] <R2> the <Z2> <C2> <M2> <S2> <L2> [that is] <R> the <Z3> <C3> <M3> <S3> <L3>; what is it?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z3>",
+          "<C3>",
+          "<M3>",
+          "<S3>",
+          "<L3>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R>",
+          "<Z2>",
+          "<C2>",
+          "<M2>",
+          "<S2>",
+          "<L2>"
+        ],
+        "inputs": [
+          1
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "side_inputs": [
+          "<R2>",
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          2
+        ],
+        "type": "relate_filter_unique"
+      },
+      {
+        "inputs": [
+          3
+        ],
+        "type": "query_label"
+      }
+    ],
+    "params": [
+      {
+        "type": "Label",
+        "name": "<L2>"
+      },
+      {
+        "type": "Label",
+        "name": "<L3>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z2>"
+      },
+      {
+        "type": "Color",
+        "name": "<C2>"
+      },
+      {
+        "type": "Material",
+        "name": "<M2>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S2>"
+      },
+      {
+        "type": "Relation",
+        "name": "<R2>"
+      },
+      {
+        "type": "Size",
+        "name": "<Z3>"
+      },
+      {
+        "type": "Color",
+        "name": "<C3>"
+      },
+      {
+        "type": "Material",
+        "name": "<M3>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S3>"
+      }
+    ],
+    "constraints": [
+    ]
+  },
+  {
+    "text": [
+      "What is the <Z> <C> <M> <S> thing?",
+      "There is a <Z> <C> <M> <S> thing; what is it?"
+    ],
+    "nodes": [
+      {
+        "inputs": [],
+        "type": "scene"
+      },
+      {
+        "side_inputs": [
+          "<Z>",
+          "<C>",
+          "<M>",
+          "<S>"
+        ],
+        "inputs": [
+          0
+        ],
+        "type": "filter_unique"
+      },
+      {
+        "inputs": [
+          1
+        ],
+        "type": "query_label"
+      }
+    ],
+    "params": [
+      {
+        "type": "Size",
+        "name": "<Z>"
+      },
+      {
+        "type": "Color",
+        "name": "<C>"
+      },
+      {
+        "type": "Material",
+        "name": "<M>"
+      },
+      {
+        "type": "Shape",
+        "name": "<S>"
+      }
+    ],
+    "constraints": [
+    ]
+  }
+]
